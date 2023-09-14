@@ -1,0 +1,54 @@
+#gameboard {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.square svg {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    z-index: -9;   
+ }
+ path{
+    position: relative;
+    z-index:-10;
+ }
+.piece {
+  position: absolute; /* Position relative to the parent container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Move back by half of its width and height */
+  z-index: 9;
+  transition: transform 0.2s ease; /* Smooth animation on hover */
+  width: 35px;
+  height: 35px;}
+
+
+/* Add hover styles for smooth animation */
+.piece:hover {
+  transform: translate(-50%, -50%) scale(1.1); 
+}
+
+
+.beige{
+    background-color: rgb(192, 192, 142);
+
+}
+
+.brown{
+    background-color: brown;
+}
+.black{
+    fill:black;
+}
+.white{
+    fill:rgb(241, 237, 237);
+}
